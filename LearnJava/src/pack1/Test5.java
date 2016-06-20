@@ -1,7 +1,7 @@
 package pack1;
 /**
  * 
- * 一.Java语言基础  ---> Java基础语法 ---> 基本数据类型
+ * 一.Java语言基础  ---> Java基础语法 ---> 数据运算符
  * 
  *   重点
  *   
@@ -36,7 +36,21 @@ package pack1;
 			<<、|、&、^
 		
 		特点：效率最高(直接操纵二进制数)，也较难理解
+		
+	   	七.作业
+	   	
+	   		计算：74513各个位数之和
  */
 public class Test5 {
-
+	
+	public static void main(String[] args) {
+		int number = 74513;
+		int ge = number / 1 % 10;
+		int shi = number / 10 % 10;
+		int bai = number / 100 % 10;
+		int qian = number / 1000 % 10;
+		int wan = number / 10000 % 10;
+		System.out.println("各个位数之和是："+(ge+shi+bai+qian+wan));
+	}
+	
 }
