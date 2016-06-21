@@ -7,7 +7,7 @@ import java.util.Arrays;
  * 
  * 		作业：
  * 			1.数组已经初始化完毕后，再向下标位3的后面插入一个元素100
- * 			2.在1的基础上进行改进,使方法适用于在任何下标位置插入元素
+ * 			2.在[1]的基础上进行改进,使方法适用于在任何下标位置插入元素
  */
 public class Test4 {
 	
@@ -18,7 +18,7 @@ public class Test4 {
 		//数组插入最终版
 		try{
 			int[] arr = new int[]{554,1,36,7,99,147};
-			int[] newArray = insertIndex(arr, -9, 50);
+			int[] newArray = insertIndex(arr, 1, 50);
 			printArr(newArray);
 		}catch(Exception e){
 			e.printStackTrace();
